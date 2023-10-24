@@ -128,7 +128,7 @@ h3 {
 #mission-photo {
   width: 100%;
 }
-#S2dgs {
+#s2dgs {
   margin-top: 50px;
   width: 100%;
 }
@@ -197,7 +197,7 @@ h3 {
   margin: 0;
 }
 /* もっとみるボタン */
-#prpduct-more {
+#product-more {
   margin: 0 auto -42px auto;
 }
  /* ABOUT US */
@@ -539,7 +539,7 @@ footer {
   width: 368px;
   color: #ffffff;
   height: 496px;
-  border-radius: 248px 0 248px 0;
+  border-radius: 0 248px 248px 0;
   position: relative;
 } 
 
@@ -662,13 +662,14 @@ footer {
    #sns > a {
    margin-right: 30px;
    }
-   #main-visual {
+  /* メインビジュアル */
+  #main-visual {
     position: relative;
     height: 470px;
     width: 100%;
     overflow: hidden;
-   }
-   #main-visual > div {
+  }
+  #main-visual > div {
     position: absolute;
     top: 0;
     left: 0;
@@ -679,15 +680,17 @@ footer {
     height: 280px;
     width: 100%;
     z-index: 11;
-   }
-   h1 {
+  }
+  #main-visual > div > h1 {
     font-size: 28px;
-    margin-top: 90px;
-   }
-   p {
+    margin: 90px 0 0 0;
+  }
+
+  #main-visual > div > p {
     margin: 0;
-   }
-  #main-visual > img  {
+  }
+
+  #main-visual > img {
     width: 100%;
     border-radius: 476px 0 0 0;
     z-index: 10;
@@ -696,7 +699,7 @@ footer {
     right: 0;
   }
   h2::after {
-    content: url(images/line.png);
+    content: url("images/line.png");
     margin: 0 0 0 10px;
   }
   h3 {
@@ -980,7 +983,7 @@ footer {
  }
   #mission-title > h1 {
    position: absolute;
-   top: 0;
+   top: 0px;
    left: 20px;
    font-size: 40px;
  }
@@ -991,7 +994,7 @@ footer {
    left: 20px;
    font-size: 18px;
  }
-
+ 
   #mission-title > div {
    position: absolute;
    top: 180px;
@@ -1006,6 +1009,7 @@ footer {
  .mission-h2 {
   color: #2710d5;
   font-size: 38px;
+  margin: 0px;
  }
 
  .mission-h2::after {
@@ -1040,12 +1044,12 @@ footer {
 
  .fivegoals-number {
   color: #2710d5;
-  font: 48px;
+  font-size: 48px;
   margin: 0;
  }
 
  .fivegoals-h3 {
-  font-size: 20px;
+  font-size: 28px;
   margin: 0;
  }
 
@@ -1075,7 +1079,7 @@ footer {
 
   #product-title > h1 {
     position: absolute;
-    top:  -50px;
+    top: 0;
     left: 20px;
     font-size: 40px;
   }
